@@ -1,0 +1,23 @@
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+  --primary-color: #6200ee;
+}
+
+body.dark-theme {
+  --background-color: #121212;
+  --text-color: #fff;
+  --primary-color: #bb86fc;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-component {
+  box-sizing: border-box;
+}
