@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Components Demo</title>
+  <link rel="stylesheet" href="../../styles/theme.css">
+  <script type="module" src="../../components/icon/custom-icon.js"></script>
+  <script type="module" src="../../components/card/custom-card.js"></script>
+  <script type="module" src="../../components/menu/custom-menu.js"></script>
+  <script type="module" src="../../components/panel/custom-panel.js"></script>
+  <script type="module" src="../../components/theme/theme-toggle.js"></script>
+  <style>
+    main { padding: 1rem; }
+  </style>
+</head>
+<body>
+  <custom-menu>
+    <a href="#home">Home</a>
+    <a href="#settings">Settings</a>
+    <theme-toggle></theme-toggle>
+  </custom-menu>
+  <main>
+    <custom-card>
+      <span slot="header">Welcome</span>
+      This is a demo using custom components.
+    </custom-card>
+
+    <custom-panel>
+      <span slot="header">Panel Example</span>
+      Panel content here.
+    </custom-panel>
+  </main>
+</body>
+</html>
